@@ -6,7 +6,7 @@ interface RecipeProps {
 export default function EachRecipe({ recipe }: RecipeProps) {
   return (
     <div>
-      <p>Hi</p>  
+      <p>{recipe.title}</p>  
       <img src={recipe.image} alt="" />
     </div>
   );

@@ -8,7 +8,7 @@ export default function getRecipes(query: string, intolerances?: string[]):Promi
             addRecipeNutrition: true,
             addRecipeInformation: true,
             query: query,
-            // intolerances: intolerances?.join(",")
+            intolerances: intolerances?.join(",")
         }
     })
     .then((response) => {
