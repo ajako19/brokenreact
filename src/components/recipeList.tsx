@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import getRecipes from "../services/getRecipes"
 import Recipe from "../models/recipes-model"
+import EachRecipe from "./EachRecipe"
 
 export default function recipeResaults () {
     const [mealData, setMealData] = useState<Recipe[]>([])
